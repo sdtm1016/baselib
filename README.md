@@ -1,1 +1,1 @@
-# golang_baselib
+# baselib for golang
