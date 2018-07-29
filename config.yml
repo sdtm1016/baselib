@@ -1,0 +1,61 @@
+#redis 配置信息
+redisdb:
+  password:
+  addr:   192.168.249.128:6379
+  user:
+  database: 1
+
+#mongo 配置信息
+mongodb:
+  hostsports: 192.168.249.128:27017
+  dbname: test
+  userpass:
+  replicaset:
+  role: admin
+
+#rpc server端配置 (地址即本应用地址)
+rpcserver:
+  protocol: tcp
+  port: 7777
+  interfacename: 以太网
+
+#oss 文件上传配置信息
+oss:
+  accesskeyid: GBLTAIS5aXEgxaRBam
+  accesskeysecret: GbVju7noTyDJlDaitBitERxsP0xlqAMt
+  bucketname: gb-baselib-dev-files
+  action: https://%s.oss-cn-hangzhou.aliyuncs.com
+  replace: http://oss.gb.net/%s
+
+# 获取用户信息接口
+fetch:
+  fetchurl: http://127.0.0.1:8080/xxx/getUserInfo
+  fetchwechaturl: http://127.0.0.1:8002/userinfo?appid=%s&openid=%s
+
+# rabbitMQ配置信息
+rabbitmq:
+  addr: amqp://guest:guest@192.168.249.128:5672
+
+# 是否处于debug模式
+debugconfig:
+  debug: true
+
+# etcd 配置信息
+etcd:
+  addr: 127.0.0.1:2379
+
+# log 日志级别
+logger:
+   level: info
+
+# app 应用appKey
+app:
+  appkey: 12345678gbdf
+
+#microservice001 服务url
+microservice001:
+  url: http://127.0.0.1:5999
+
+#microservice002 服务url
+microservice002:
+  url: http://127.0.0.1:6999
